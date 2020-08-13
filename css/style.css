@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Color Theme Swatches in Hex */
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-1-hex { color: #025159; }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-2-hex { color: #03A696; }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-3-hex { color: #F28705; }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-4-hex { color: #F25D27; }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-5-hex { color: #F20505; }
+
+/* Color Theme Swatches in RGBA */
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-1-rgba { color: rgba(2, 81, 89, 1); }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-2-rgba { color: rgba(3, 166, 150, 1); }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-3-rgba { color: rgba(242, 135, 5, 1); }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-4-rgba { color: rgba(242, 93, 39, 1); }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-5-rgba { color: rgba(242, 5, 5, 1); }
+
+/* Color Theme Swatches in HSLA */
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-1-hsla { color: hsla(185, 95, 17, 1); }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-2-hsla { color: hsla(174, 96, 33, 1); }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-3-hsla { color: hsla(32, 95, 48, 1); }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-4-hsla { color: hsla(15, 88, 55, 1); }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-5-hsla { color: hsla(0, 95, 48, 1); }
+
+html{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 23px;
+}
+body{
+    margin: 0;
+    background-color: #03A696;
+}
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+#header{
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: #025159;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    
+}
+#titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+    line-height: 1;
+}
+#marinaKlainer{
+    margin: 0;
+    padding: 0;
+    color: #F28705;
+    font-size: 1rem;
+    font-weight: normal;
+}
+#profDeIngles{
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    color: #F25D27;
+    font-size: 0.652rem;
+    font-weight: normal;
+    text-align: center;
+}
+ul{
+    display: none;
+}
+#hamburgerMenu{
+    background: url('../images/13680943781580120701.png');
+    margin-right: 5px;
+    width: 45px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+}
+#footer{
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    bottom: 0px;
+    background-color: #025159;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    
+}
+.icon {
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 31px;
+}
+#center{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+#cloud{
+    background-image: url(../images/wordcloud.png);
+    background-size: contain;
+    background-position: center;
+    width: 120vw;
+    height: 80vh;
+}
+/*#email{
+    background-image: url('../images/email.png'); 
+}*/
+/*#linkedin{
+    background-image: url('../images/linkedin.png');
+}*/
