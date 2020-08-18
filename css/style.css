@@ -2,7 +2,7 @@
 
 /* Color Theme Swatches in Hex */
 .mother-and-son-travel-in-mountains-at-sunset,-panorama-1-hex { color: #025159; }
-.mother-and-son-travel-in-mountains-at-sunset,-panorama-2-hex { color: #03A696; }
+.mother-and-son-travel-in-mountains-at-sunset,-panorama-2-hex { color: #03A596; }
 .mother-and-son-travel-in-mountains-at-sunset,-panorama-3-hex { color: #F28705; }
 .mother-and-son-travel-in-mountains-at-sunset,-panorama-4-hex { color: #F25D27; }
 .mother-and-son-travel-in-mountains-at-sunset,-panorama-5-hex { color: #F20505; }
@@ -27,10 +27,38 @@ html{
 }
 body{
     margin: 0;
-    background-color: #03A696;
+    background-color: #03a596;
+}
+#navBar{
+    position: absolute;
+    top: 60px;
+    height: 40px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    z-index: 8;
+}
+.mainMenuItem{
+    font-size: 0.8rem;
+    color: #F20505;
+    text-transform: lowercase;
+    padding: 10px;
+    cursor: pointer;
+}
+.mainMenuItem::before{
+    content: '';
+    width: 5px;
+    height: 12px;
+    background-color: rgba(100,100,100,.5);
+    display: block;
+    left: 0;
 }
 a{
     text-decoration: none;
+    font-size: 0;
     margin: 0;
     padding: 0;
     height: auto;
@@ -45,7 +73,7 @@ a{
     align-items: center;
     position: fixed;
     z-index: 5;
-    
+    top: 0px;
 }
 #titles{
     display: flex;
@@ -74,13 +102,25 @@ ul{
     display: none;
 }
 #hamburgerMenu{
-    background: url('../images/13680943781580120701.png');
-    margin-right: 5px;
-    width: 45px;
+    background: url('../images/menu-black-18dp.svg');
+    margin-right: 15px;
+    width: 40px;
     height: 40px;
     background-size: cover;
     background-position: center;
+    border: 3px solid #F25D27;
+    cursor: pointer;
+
 }
+.fastRotationCl{
+    transform: rotate(-1530deg);
+    transition: 1s;   
+}
+.fastRotationCountercl{
+    transform: rotate(1440deg);
+    transition: 1s;   
+}
+
 #footer{
     display: flex;
     width: 100vw;
@@ -104,14 +144,37 @@ ul{
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items:center; 
+    align-items:center;
+    overflow: hidden;
+    background-color: #03a596;
+    z-index: 3;
+    position: absolute;
 }
 #cloud{
     background-image: url(../images/wordcloud.png);
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     width: 120vw;
     height: 80vh;
+    animation: rotar;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    z-index: 5;
+}
+@keyframes rotar {
+
+    10% {transform: rotate(45deg);}
+    30% {transform: rotate(120deg);}
+    35% {transform: rotate(100deg);}
+    40% {transform: rotate(160deg);}
+    60% {transform: rotate(210deg);}
+    70% {transform: rotate(180deg);}
+    80% {transform: rotate(290deg);}
+    100% {transform: rotate(360deg);}
 }
 /*#email{
     background-image: url('../images/email.png'); 
